@@ -1,0 +1,201 @@
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+<!--    <EditText-->
+<!--        android:id="@+id/tvExpression"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80sp"-->
+<!--        android:textColor="@color/numberButton"-->
+<!--        android:ellipsize="start"-->
+<!--        android:singleLine="true"-->
+<!--        android:textSize="40sp"-->
+<!--        android:layout_gravity="end"/>-->
+
+
+    <EditText
+        android:textSize="30sp"
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@color/numberButton"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tvClear"
+            style="@style/ActionButtonStyle"
+            android:onClick="acEvent"
+            android:text="CE"/>
+<!--        <Button-->
+<!--            android:id="@+id/tvOpen"-->
+<!--            style="@style/ActionButtonStyle"-->
+<!--            android:text="("/>-->
+<!--        <Button-->
+<!--            android:id="@+id/tvClose"-->
+<!--            style="@style/ActionButtonStyle"-->
+<!--            android:text=")"/>-->
+        <Button
+            android:id="@+id/tvDivide"
+            style="@style/ActionButtonStyle"
+            android:onClick="operatorEvent"
+            android:text="/"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/tvSeven"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="7"/>
+        <Button
+            android:id="@+id/tvEight"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+
+            android:text="8"/>
+        <Button
+            android:id="@+id/tvNine"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+
+            android:text="9"/>
+        <Button
+            android:id="@+id/tvMul"
+            style="@style/ActionButtonStyle"
+            android:onClick="operatorEvent"
+
+            android:text="*"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tvFour"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="4"/>
+        <Button
+            android:id="@+id/tvFive"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="5"/>
+        <Button
+            android:id="@+id/tvSix"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="6"/>
+        <Button
+            android:id="@+id/tvMinus"
+            style="@style/ActionButtonStyle"
+            android:onClick="operatorEvent"
+            android:text="-"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/tvOne"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="1"/>
+        <Button
+            android:id="@+id/tvTwo"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="2"/>
+        <Button
+            android:id="@+id/tvThree"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="3"/>
+        <Button
+            android:id="@+id/tvPlus"
+            style="@style/ActionButtonStyle"
+            android:onClick="operatorEvent"
+            android:text="+"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/tvDot"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="."/>
+        <Button
+            android:id="@+id/tvZero"
+            style="@style/NumberButtonStyle"
+            android:onClick="numberEvent"
+            android:text="0"/>
+        <ImageView
+            android:id="@+id/tvBack"
+            android:src="@drawable/ic_baseline_backspace_24"
+            android:scaleType="center"
+            style="@style/NumberButtonStyle"
+            android:onClick="backEvent"
+            android:text="Back"/>
+        <Button
+            android:id="@+id/tvEquals"
+            style="@style/ActionButtonStyle"
+            android:onClick="equalEvent"
+            android:text="="/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
